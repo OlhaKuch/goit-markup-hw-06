@@ -780,6 +780,9 @@ body {
   position: relative;
   margin: 0;
 }
+.link-agree {
+  color: var(--accent-color);
+}
 
 .icon-agree-checked {
   background-color: transparent;
@@ -804,7 +807,6 @@ body {
 .checkbox:focus + .icon-agree-checked {
   box-shadow: 0 0 0 1px var(--accent-color);
 }
-
 .icon-agree-color-active {
   position: absolute;
   left: 0;
