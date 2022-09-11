@@ -457,7 +457,7 @@
             <p class="call-to-action" lang="uk">Підпишіться на розсилку</p>
             <div class="submit">
               <label>
-              <input type="email" name="email" class="enter-email" placeholder="E-mail"/>
+              <input type="email" name="email" class="enter-email" placeholder="E-mail" required/>
                 </label>
             <button type="submit" class="enter-button">
               <div class="sign-up">
@@ -493,7 +493,7 @@
             <label class="icon-ident">
               <span class="claim" lang="uk">Пошта</span>
               <span class="fill-box-wrapper">
-                <input type="email" name="user-email" required pattern class="form-for-fill"/>
+                <input type="email" name="user-email" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" class="form-for-fill"/>
               <svg class="contact-icon" width="13" height="13">
                 <use href="./images/symbol-defs.svg#icon-mail" class="icon-color-change"></use>              
               </svg>
@@ -502,7 +502,7 @@
           <label class="icon-ident">
               <span class="claim" lang="uk">Телефон</span>
               <span class="fill-box-wrapper">
-            <input type="tel" name="user-phone"  required
+            <input type="tel" name="user-phone" required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx" class="form-for-fill">
               <svg class="contact-icon" width="15" height="12">
@@ -510,7 +510,7 @@
               </svg>
             </span>
           </label>
-          <label>
+          <label class="comment-style">
               <span class="claim" lang="uk">Комментар</span>
               <span class="fill-box-wrapper">
               <textarea name="comment" placeholder="Введіть текст" class="form-for-fill-comment"></textarea>
@@ -518,7 +518,7 @@
           </label>
           <label class="check-box-form">
             <span class="checkbox-position">
-              <input type="checkbox" name="agree-form" class="checkbox visually-hidden"/>
+              <input type="checkbox" name="agree-form" required class="checkbox visually-hidden"/>
               <svg class="icon-agree-checked" width="16" height="15">
                   <use href="./images/symbol-defs.svg#icon-check" class="icon-agree-color-active"></use>
               </svg>
