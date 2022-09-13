@@ -8,7 +8,7 @@
   --backfround-non-active-button: #f5f4fa;
   --backfround-active-button: #188ce8;
   --background-button: #2196f3;
-  --transition-dur-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-fun: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
   list-style: none;
@@ -744,10 +744,12 @@ body {
 .icon-color-change {
   transition: fill var(--transition-dur-fun);
 }
-.form-for-fill:focus + .contact-icon .icon-color-change {
+.form-for-fill:focus + .contact-icon .icon-color-change,
+.form-for-fill:hover + .contact-icon .icon-color-change {
   fill: var(--accent-color);
 }
-.form-for-fill:focus {
+.form-for-fill:focus,
+.form-for-fill:hover {
   border: 1px solid var(--accent-color);
   outline: none;
 }
